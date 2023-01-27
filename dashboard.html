@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-lg-2">
+        <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 280px">
+          <a
+            href="/"
+            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+          >
+            <img style="padding-right: 10px" src="./images/menu-bar.svg" />
+            <img src="./images/header-logo.svg" />
+          </a>
+
+          <ul class="nav nav-pills flex-column mb-auto mt-5">
+            <li class="nav-item mb-3">
+              <a
+                href="#"
+                style="
+                  margin-left: 10px;
+                  background-color: #f0c5c9;
+                  color: #c8242f;
+                "
+                class="nav-link link-dark"
+                aria-current="page"
+              >
+                <img
+                  style="width: 22px; margin-right: 10px"
+                  src="./images/dashboard-active.svg"
+                />
+                Dashboard
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="#" style="margin-left: 10px" class="nav-link link-dark">
+                <img
+                  style="width: 22px; margin-right: 10px"
+                  src="./images/graph-default.svg"
+                />
+                Analysis
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="#" style="margin-left: 10px" class="nav-link link-dark">
+                <img
+                  style="width: 22px; margin-right: 10px"
+                  src="./images/inbox-default.svg"
+                />
+                Inbox
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="#" style="margin-left: 10px" class="nav-link link-dark">
+                <img
+                  style="width: 22px; margin-right: 10px"
+                  src="./images/clock-default.svg"
+                />
+                History
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="#" style="margin-left: 10px" class="nav-link link-dark">
+                <img
+                  style="width: 22px; margin-right: 10px"
+                  src="./images/user-default.svg"
+                />
+                Users
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="#" style="margin-left: 10px" class="nav-link link-dark">
+                <img
+                  style="width: 22px; margin-right: 10px"
+                  src="./images/setting-default.svg"
+                />
+                Maintenance
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="#" style="margin-left: 10px" class="nav-link link-dark">
+                <img
+                  style="width: 22px; margin-right: 10px"
+                  src="./images/setting-default.svg"
+                />
+                Setting
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-10 mt-3">
+        <div class="row">
+            <div class="col-lg-9">
+              <img
+                style="
+                  width: 22px;
+                  position: absolute;
+                  margin-top: 5px;
+                  margin-left: 35px;
+                "
+                src="./images/search-icon.svg"
+              />
+              <input
+                type="search"
+                style="
+                  width: 70%;
+                  margin-left: 5px;
+                  border-width: 0;
+                  font: normal normal normal 16px/21px Roboto;
+                "
+                class="form-control dashSearch"
+                id="datatable-search-input"
+                placeholder="Search"
+              />
+              
+            </div>
+            <div class="col-lg-3" style="position: absolute;">
+              <img width="22px" src="./images/notification-icon.svg" style="position: absolute; margin-left: 950px; margin-top: 10px;">
+              <div class="dropdown" style="margin-left: 1000px;">
+                <a href="#" class="d-flex align-items-center link-dark text-decoration-none /*dropdown-toggle*/" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="./images/profile.png" alt="" width="44" height="44" class="rounded-circle me-3">
+                  <strong class="me-4">John</strong>
+                  <img src="./images/downward-arrow.svg">
+                </a>
+                <ul class="dropdown-menu text-small shadow">
+                  <li><a class="dropdown-item" href="#">New project...</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="container mt-3 grid" style="background-color: #f7f4f4; margin-left: 20px;">
+              <h2 style="margin-left: 70px;" class="mt-5 mb-3"><strong>Dashboard</strong></h2>
+                <div class="div1">
+                  <div class="div11 text-center">
+                    <img src="./images/star.svg" style="width: 50px; margin-left: 30px; margin-top: -40px;">
+                    <div>
+                      <h4><b>23,456</b></h4>
+                      <p>New Products</p>
+                    </div>
+                  </div>
+                  <div class="div11 text-center">
+                    <img src="./images/new-product.svg" style="width: 50px; margin-left: 30px; margin-top: -40px;">
+                    <div>
+                      <h4><b>2345</b></h4>
+                      <p>Added Products</p>
+                    </div>
+                  </div>
+                  <div class="div11 text-center">
+                    <img src="./images/total-product.svg" style="width: 50px; margin-left: 30px; margin-top: -40px;">
+                    <div>
+                      <h4><b>32,456</b></h4>
+                      <p>Total Products</p>
+                    </div>
+                  </div>
+                  <div class="div11 text-center">
+                    <img src="./images/dollar-filled.svg" style="width: 50px; margin-left: 30px; margin-top: -40px;">
+                    <div>
+                      <h4><b>5678</b></h4>
+                      <p>Today's Sale</p>
+                    </div>
+                  </div>
+                  <div class="div11 text-center">
+                    <img src="./images/money-bag.svg" style="width: 50px; margin-left: 30px; margin-top: -40px;">
+                    <div>
+                      <h4><b>33,456</b></h4>
+                      <p>Total Sale</p>
+                    </div>
+                  </div>
+                </div>
+
+            <div class="row mt-5 mb-5" style="margin-left: 55px;">
+              <div class="container p-5 bg-light col-lg-8">
+                <h4><b>Sale</b></h4>
+                <div style="margin-left:540px; margin-bottom: 20px; margin-top: -20px;">
+                  <a style="color: #ADADAD; margin-right: 10px;">Weekly</a>
+                  <a style="color: #ADADAD; margin-right: 10px;">Monthly</a>
+                  <a style="color: #C8242F; margin-right: 10px;">Yearly</a>
+                </div>
+                <img src="./images/data-graph.png">
+              </div>
+              <div class="container-fluid p-5 bg-light col-lg-4">
+                <h4><b>Sale by country</b></h4>
+                <img src="./images/pie-chart.svg">
+                <div class="row">
+                  <div class="circle col-lg-2" style="background-color: #C8242F;"></div>
+                  <div class="col"><b>United States of America</b></div>
+                  <div class="circle col-lg-2" style="background-color: #A2B86C;"></div>
+                  <div class="col"><b>Canada</b></div>
+                </div>
+                <div class="row mt-2">
+                  <div class="circle col-lg-2" style="background-color: #F16C20;"></div>
+                  <div class="col"><b>Russia</b></div>
+                  <div class="circle col-lg-2" style="background-color: #EBC844;"></div>
+                  <div class="col"><b>India</b></div>
+                </div>
+                <!-- <div class="row"> 
+                  <div class="col">
+                    <div class="circle" style="background-color: #C8242F;"></div><b>USA</b>
+                    <div class="circle mt-3" style="background-color: #F16C20;"></div><b>Russia</b>
+                  </div>
+                  <div class="col">
+                    <div class="circle" style="background-color: #A2B86C;"></div><b>Canada</b>
+                    <div class="circle mt-3" style="background-color: #EBC844;"></div><b>India</b>
+                  </div>
+                </div>    -->
+              </div>
+            </div>
+
+            <div class="container p-5 bg-light" style="margin-left: 55px;">
+              <h4><b>Invoices</b></h4>
+              <br>
+              <br>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col" style="color: #ADADAD;">Invoice</th>
+                    <th scope="col" style="color: #ADADAD;">Company Name</th>
+                    <th scope="col" style="color: #ADADAD;">Email</th>
+                    <th scope="col" style="color: #ADADAD;">Due Date</th>
+                    <th scope="col" style="color: #ADADAD;">Status</th>
+                    <th scope="col" style="color: #ADADAD;">Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>65231</td>
+                    <td>Public Adujusting Firm</td>
+                    <td>abcd@gmail.com</td>
+                    <td>24 May, 2020</td>
+                    <td><p class="text-center" style="color:#FF4545; background-color:#FFF5F5; width:60px; height:20px;">Failed</p></td>
+                    <td>$170</td>
+                  </tr>
+                  <tr>
+                    <td>89361</td>
+                    <td>Other</td>
+                    <td>abcd@gmail.com</td>
+                    <td>24 May, 2020</td>
+                    <td><p class="text-center" style="color:#FF4545; background-color:#FFF5F5; width:60px; height:20px;">Failed</p></td>
+                    <td>$170</td>
+                  </tr>
+                  <tr>
+                    <td>5166</td>
+                    <td>Vendor</td>
+                    <td>abcd@gmail.com</td>
+                    <td>24 May, 2020</td>
+                    <td><p class="text-center" style="color:#3CDD5F; background-color:#EBFFEF; width:60px; height:20px;">Paid</p></td>
+                    <td>$300</td>
+                  </tr>
+                  <tr>
+                    <td>71946</td>
+                    <td>TPA</td>
+                    <td>abcd@gmail.com</td>
+                    <td>24 May, 2020</td>
+                    <td><p class="text-center" style="color:#BABABA; background-color:#F8F8F8; width:60px; height:20px;">Pending</p></td>
+                    <td>$2000</td>
+                  </tr>
+                  <tr>
+                    <td>15528</td>
+                    <td>Insurance Carrier</td>
+                    <td>abcd@gmail.com</td>
+                    <td>24 May, 2020</td>
+                    <td><p class="text-center" style="color:#3CDD5F; background-color:#EBFFEF; width:60px; height:20px;">Paid</p></td>
+                    <td>$590</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
