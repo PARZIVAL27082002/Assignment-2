@@ -172,3 +172,18 @@ border-radius: 5px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border-radius: 5px;
 }
+
+.activeTab{
+  color: #C8242F;
+  border: none;
+  border-bottom: 1px solid #C8242F !important;
+
+}
+
+.activeTab:hover{
+color: black;
+}
+
+input[type='radio'],input[type='checkbox']{
+  accent-color: crimson !important;
+}

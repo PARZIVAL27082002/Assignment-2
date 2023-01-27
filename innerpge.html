@@ -143,7 +143,7 @@
                 </ul>
               </div>
             </div>
-          <div class="container mt-3" style="background-color: #f7f4f4; margin-left: 20px;">
+          <div class="container mt-3 " style="background-color: #f7f4f4; margin-left: 20px;">
             <h2 style="margin-left: 70px;" class="mt-5"><strong>Analysis</strong></h2>
             <form class="mt-5 mb-5">
               <h4 style="margin-left: 85px;"><b>One Column</b></h4>
@@ -204,40 +204,60 @@
               <h6 style="margin-left: 230px; margin-top: -28px; color: #ADADAD;">No item Selected</h6>
 
               <h4 style="margin-left: 90px;" class="mt-5" ><b>Radio Button</b></h4>
-              <div class="form-check form-check-inline" style="margin-left: 90px;">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <!-- <div class="form-check-inline" style="margin-left: 90px;">
+                <input class="form-check" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                 <label class="form-check-label" for="inlineRadio1">Option 1</label>
               </div>
-              <div class="form-check form-check-inline" >
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <div class="form-check-inline" >
+                <input class="form-check" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
                 <label class="form-check-label" for="inlineRadio2">Option 2</label>
+              </div> -->
+              <div style="margin-left: 90px;" class="radio-container">
+                <span class="me-4"><input class="me-2" type="radio" name="option" value="op1">Option 1</span>
+                <span class=""><input class="me-2" type="radio" name="option" value="op2">Option 2</span>
               </div>
 
               <h4 style="margin-left: 90px;" class="mt-5" ><b>Checkbox</b></h4>
-              <div class="form-check form-check-inline" style="margin-left: 90px;">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <div style="margin-left: 90px;" class="radio-container">
+                <span class="me-4"><input class="me-2" type="checkbox" name="option" value="op1">Option 1</span>
+                <span class=""><input class="me-2" type="checkbox" name="option" value="op2">Option 2</span>
+              </div>
+              <!-- <div class="form-check-inline" style="margin-left: 90px;">
+                <input class="form-check" type="checkbox" id="inlineCheckbox1" value="option1">
                 <label class="form-check-label" for="inlineCheckbox1">Option 1</label>
               </div>
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
                 <label class="form-check-label" for="inlineCheckbox2">Option 2</label>
-              </div>
+              </div> -->
 
               <h4 style="margin-left: 90px;" class="mt-5" ><b>Snackbar</b></h4>
               <div class="row mt-3" style="margin-left: 85px; width: 75%;">
                 <div class="col">
-                  <button type="button" class="btn btn-outline-danger"><img style="width: 22px;" src="./images/error-icon.svg">  This is error messsage</button>
+                  <div class="alert alert-danger bg-light"role="alert">
+                    <img style="width: 22px;" src="./images/error-icon.svg">
+                    This is error messsage
+                  </div>
                 </div>
                 <div class="col">
-                  <button type="button" class="btn btn-outline-primary"><img style="width: 22px;" src="./images/info-icon.svg">  This is infromation message</button>
+                  <div class="alert alert-info bg-light" role="alert">
+                    <img style="width: 22px;" src="./images/info-icon.svg">
+                    This is information message
+                  </div>
                 </div>
               </div>
               <div class="row mt-3" style="margin-left: 85px; width: 75%;">
                 <div class="col">
-                  <button type="button" class="btn btn-outline-warning"><img style="width: 22px;" src="./images/warning-icon.svg">  This is warning messsage</button>
+                  <div class="alert alert-warning bg-light" role="alert">
+                    <img style="width: 22px;" src="./images/warning-icon.svg">
+                    This is warning messsage
+                  </div>
                 </div>
                 <div class="col">
-                  <button type="button" class="btn btn-outline-success"><img style="width: 22px;" src="./images/success-icon.svg">  This is success message</button>
+                  <div class="alert alert-success bg-light" role="alert">
+                    <img style="width: 22px;" src="./images/success-icon.svg">
+                    This is success message
+                  </div>
                 </div>
               </div>
               
@@ -248,9 +268,9 @@
               <h4 style="margin-left: 90px;" class="mt-5" ><b>Tabs</b></h4>
                 <nav style="margin-left: 90px;">
                   <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
-                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
-                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+                    <a class="nav-item nav-link activeTab " id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Tab1</a>
+                    <a class="nav-item nav-link " id="nav-profile-tab" style="color: black;" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Tab3</a>
+                    <a class="nav-item nav-link " id="nav-contact-tab" style="color: black;" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Tab3</a>
                   </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent" style="margin-left: 90px;">
